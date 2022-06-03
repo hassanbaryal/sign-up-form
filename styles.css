@@ -83,8 +83,14 @@ form {
     justify-content: center;
 }
 
+label {
+    font-size: 1.2rem;
+}
+
 input {
     width: 95%;
+    font-size: 1.3rem;
+    line-height: 1.6;
 }
 
 
