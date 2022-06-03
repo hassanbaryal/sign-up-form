@@ -27,7 +27,7 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     display: flex;
 }
 
@@ -42,11 +42,15 @@ div {
 
 .img-container {
     width: 35%;
+
+    background-image: url(./images/sven-ciupka--_HP8atNem8-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .form-container {
     width: 65%;
-
+    margin-left: 25px;
     display: flex;
     flex-flow: column;
     justify-content: center;
