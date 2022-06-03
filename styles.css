@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: beige;
+    --main-bg-color: rgb(243, 231, 199);
 }
 
 * {
@@ -17,6 +17,8 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+
+    background-color: var(--main-bg-color);
 }
 
 
@@ -95,6 +97,26 @@ input {
     width: 95%;
     font-size: 1.3rem;
     line-height: 1.6;
+
+    background-color: inherit;
+}
+
+button {
+    height: 45px;
+    width: 200px;
+
+    border: 1px solid  rgb(221,138,60);
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: inherit;
+
+    margin-top: 30px;
+}
+
+button + p {
+    margin-top: 30px;
 }
 
 
