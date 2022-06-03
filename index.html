@@ -25,21 +25,44 @@
                 <p>You <i>know</i> you want to.</p>
             </div>
 
+            <!-- FORM -->
             <form action="" class="log-in-form">
+
+                <div class="lets-do-this">
+                    <h1>Let's do this!</h1>
+                </div>
+
                 <div class="input-area">
-                    <div class="lets-do-this">
-                        <h1>Let's do this!</h1>
+                    <!-- FIRST NAME -->
+                    <div class="form-row first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <!-- LAST NAME -->
+                    <div class="form-row last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
                     </div>
 
-                    <div class="form-row name">
-                        <div class="first-name">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name">
-                        </div>
-                        <div class="last-name">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name">
-                        </div>
+                    <!-- EMAIL -->
+                    <div class="form-row email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <!-- PHONE NUMBER -->
+                    <div class="form-row phone-num">
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" name="phone-num" id="phone-num">
+                    </div>
+                    <!-- PASSWORD -->
+                    <div class="form-row password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="form-row confirm-password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
                     </div>
                 </div>
             </form>
