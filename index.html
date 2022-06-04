@@ -35,32 +35,32 @@
                         <!-- FIRST NAME -->
                         <div class="form-row first-name">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required minlength="3" maxlength="20" placeholder="John">
                         </div>
                         <!-- LAST NAME -->
                         <div class="form-row last-name">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" required minlength="1" maxlength="20" placeholder="Smith">
                         </div>
                         <!-- EMAIL -->
                         <div class="form-row email">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required placeholder="you@email.com">
                         </div>
                         <!-- PHONE NUMBER -->
                         <div class="form-row phone-num">
                             <label for="phone-num">Phone Number</label>
-                            <input type="tel" name="phone-num" id="phone-num">
+                            <input type="tel" name="phone-num" id="phone-num" required pattern="[\d]{3}-[\d]{3}-[\d]{4}" placeholder="555-555-5555">
                         </div>
                         <!-- PASSWORD -->
                         <div class="form-row password">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                         </div>
                         <!-- CONFIRM PASSWORD -->
                         <div class="form-row confirm-password">
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <input type="password" name="confirm-password" id="confirm-password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
                         </div>
                     </div>
                     <button class="submit-btn" type="submit">Create Account</button>
