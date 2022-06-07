@@ -120,13 +120,21 @@ input:focus:invalid {
     border: 2px solid red;
 }
 
-input[type="password"]:focus:invalid::after {
-    content: "asd";
+input:focus:valid {
+    outline: none;
+    border: 2px solid greenyellow;
 }
 
-input[type="password"]:focus:invalid+p::after {
+
+
+input[type="password"]:focus:invalid+p.password-requirements::after {
     content: "Must contain at least 8 characters.\AMust contain at least 1 lower case character.\AMust contain at least 1 upper case character.\AMust contain at least 1 digit.\AMust contain at least 1 special character.";
     white-space: pre-wrap;
+    color: red;
+}
+
+p.error::after {
+    content: "Passwords do not match!";
     color: red;
 }
 
