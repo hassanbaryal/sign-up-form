@@ -1,6 +1,6 @@
 
 
-
+const root = document.documentElement
 const para = document.querySelector('.password-matches')
 const password = document.querySelector('#password')
 const confirmPassword = document.querySelector('#confirm-password')
@@ -10,6 +10,7 @@ const signUpForm = document.querySelector('#sign-up-form')
 signUpForm.addEventListener("submit", (e) =>{validateForm(e)})
 confirmPassword.addEventListener('keyup', (e)=>{checkPasswords(e)})
 
+root.classList.add('light')
 
 function validateForm (e) {
     if (password.value != confirmPassword.value) {
