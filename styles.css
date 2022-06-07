@@ -115,17 +115,18 @@ input {
     background-color: inherit;
 }
 
-input:focus:invalid {
+input:focus {
     outline: none;
+    box-shadow: 10px 5px 5px var(--form-box-shadow-color);
+}
+
+input:focus:invalid {
     border: 2px solid red;
 }
 
 input:focus:valid {
-    outline: none;
     border: 2px solid greenyellow;
 }
-
-
 
 input[type="password"]:focus:invalid+p.password-requirements::after {
     content: "Must contain at least 8 characters.\AMust contain at least 1 lower case character.\AMust contain at least 1 upper case character.\AMust contain at least 1 digit.\AMust contain at least 1 special character.";
@@ -149,9 +150,12 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     background-color: inherit;
-
     
 }
+
+    button:hover {
+        cursor: pointer;
+    }
 
 button + p {
     margin-left: 25px;
