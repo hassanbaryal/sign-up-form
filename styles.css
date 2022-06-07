@@ -1,7 +1,13 @@
 :root {
+    --text-color: black;
     --main-bg-color: #FCF9F4;
     --main-form-color: #ffffff;
     --form-box-shadow-color: #201f1f;
+    --border-color: black;
+
+    --inverse-color-bg: black; 
+    --inverse-color: #ffffff;
+
 }
 
 *,
@@ -23,6 +29,7 @@ body {
     align-items: center;
 
     background-color: var(--main-bg-color);
+    color: black;
 }
 
 
@@ -64,6 +71,7 @@ div {
 }
 
 .intro-msg {
+    font-size: 2rem;
     padding-left: 25px;
 }
 
@@ -109,7 +117,7 @@ input {
     width: 95%;
     font-size: 1.3rem;
     line-height: 1.6;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     border-radius: 7px;
 
     background-color: inherit;
@@ -144,7 +152,7 @@ button {
     width: 200px;
     margin-left: 25px;
 
-    border: 3px solid  black;
+    border: 3px solid  var(--border-color);
     border-radius: 10px;
 
     font-size: 1.1rem;
@@ -159,9 +167,9 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
 
-    background-color: black;
-    border: #FCF9F4;
-    color: #FCF9F4;
+    background-color: var(--inverse-color-bg);
+    border: var(--inverse-color);
+    color: var(--inverse-color);
 }
 
 button + p {
